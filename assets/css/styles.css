@@ -445,6 +445,15 @@ pre code {
   width: 100px;
   height: 100px;
 }
+.contact .author-message .profile-right {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  width: 100px;
+  height: 100px;
+  clear: left;
+}
+
 .contact .author-message .profile img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -455,6 +464,17 @@ pre code {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.contact .author-message .profile-right img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
 .contact .author-message .speech-bubble {
   margin-left: 155px;
   background: #10b2e7;
