@@ -6,6 +6,13 @@ jQuery(document).ready(function($) {
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1Ijoid2FyZ29qb24iLCJhIjoiY2lreGFsaDRiMDB0bXVha3NhMTc2ZWhieCJ9.BycVdXgYJA7g5XueVh9D3A'
     }).addTo(map);
+    var largeMap = L.map('large-map').setView([42.7, -84.5], 13);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1Ijoid2FyZ29qb24iLCJhIjoiY2lreGFsaDRiMDB0bXVha3NhMTc2ZWhieCJ9.BycVdXgYJA7g5XueVh9D3A'
+    }).addTo(largeMap);
     $('#browse-map').click(function() {
     	$( "#dialog" ).dialog({
   	height: 400,
