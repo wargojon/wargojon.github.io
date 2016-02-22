@@ -7,7 +7,10 @@ jQuery(document).ready(function($) {
     accessToken: 'pk.eyJ1Ijoid2FyZ29qb24iLCJhIjoiY2lreGFsaDRiMDB0bXVha3NhMTc2ZWhieCJ9.BycVdXgYJA7g5XueVh9D3A'
     }).addTo(map);
     $('#browse-map').click(function() {
-    	$('#map').removeClass("map").addClass("map-large");	
+    	$( "#dialog" ).dialog({
+  	height: 400,
+  	width: 400
+	});	
     });
     
     /* ======= Scrollspy ======= */
