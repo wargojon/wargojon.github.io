@@ -6,6 +6,10 @@ jQuery(document).ready(function($) {
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1Ijoid2FyZ29qb24iLCJhIjoiY2lreGFsaDRiMDB0bXVha3NhMTc2ZWhieCJ9.BycVdXgYJA7g5XueVh9D3A'
     }).addTo(map);
+    $('#browse-map').click(function() {
+    	$('#map').removeClass("map").addClass("map-large");	
+    });
+    
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#header', offset: 400});
     
